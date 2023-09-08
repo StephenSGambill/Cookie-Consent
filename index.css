@@ -77,17 +77,13 @@ main {
 /* modal */
 
 .modal {
-
-    /*
-Challenge:
-1. Make the modal sit on top of the other content. 
-2. Make sure it is centrally aligned both horizontally
-   and vertically (just like in the slide).
-3. When it's positioned correctly, set its display 
-   property to 'none'.
-*/
-
-
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     height: 420px;
     width: 350px;
     border-radius: 5px;
@@ -126,10 +122,15 @@ Challenge:
     cursor: pointer;
 }
 
+
 .modal-close-btn:disabled {
     color: whitesmoke;
     opacity: 0.2;
     cursor: not-allowed;
+}
+
+.reverse {
+    flex-direction: row-reverse;
 }
 
 .modal-choice-btns {
@@ -169,4 +170,18 @@ input {
     height: 140px;
     line-height: 23px;
     margin-bottom: 0;
+}
+
+.modal-display-name {
+    color: fuchsia;
+}
+
+.idiot-gif {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.idiot-gif img {
+    box-shadow: 1px 1px 3px #999;
+    border-radius: 5px;
 }
